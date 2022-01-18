@@ -1,0 +1,130 @@
+          <div class="corner-treatments-wrapper" >        
+            {% if product.tags contains 'Bestseller' %}      
+              <div class="badge" style="background: rgba(255, 255, 255, 0)">                                
+                <img     
+                  class="lazyload"
+                  src="{{ 'best-seller-icon.png' | asset_img_url: '24x' }}" 
+                  srcset="{{ 'best-seller-icon.png' | asset_img_url: '48x', scale: 2 }} 2x"
+                  data-widths="[360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"  
+                  data-sizes="auto"
+                  alt="Best seller Icon"
+                >     
+                Best Seller
+              </div>
+            {% endif %} 
+            {% if product.tags contains 'selling-fast' %}                                                                                        
+              <div class="badge" style="background: rgba(255, 255, 255, 0)">                                                    
+                <img 
+                  class="lazyload"
+                  src="{{ 'selling-fast-icon.png' | asset_img_url: '28x18' }}"               
+                  srcset="{{ 'selling-fast-icon.png' | asset_img_url: '56x36', scale: 2 }} 2x"
+                  data-widths="[360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"  
+                  data-sizes="auto"
+                  alt="Selling Fast Icon"
+                > 
+                Selling Fast
+              </div>
+            {% endif %}
+            {% if product.tags contains '3Pack' %}                                                                                                          
+              <div class="badge" style="background: rgba(255, 255, 255, 0)">                                  
+                <img 
+                  class="lazyload"
+                  src="{{ '3-pack-icon.png' | asset_img_url: '24x' }}" 
+                  srcset="{{ '3-pack-icon.png' | asset_img_url: '48x', scale: 2 }} 2x" 
+                  data-widths="[360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"  
+                  data-sizes="auto"
+                  alt="3-Pack Icon"             
+                >        
+                3 - pack
+              </div>
+            {% endif %}  
+            {% if product.tags contains 'new-arrivals' %}                                                                      
+              <div class="badge" style="background: rgba(255, 255, 255, 0)">                                  
+                <img 
+                  class="lazyload"
+                  src="{{ 'new-arrivals-icon.png' | asset_img_url: '24x' }}"
+                  srcset="{{ 'new-arrivals-icon.png' | asset_img_url: '48x', scale: 2 }} 2x"
+                  data-widths="[360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"  
+                  data-sizes="auto" 
+                  alt="New Arrivals Icon"
+                >        
+                New Arrivals
+              </div>
+            {% endif %} 
+            {% if product.tags contains 'collab' %}                                                                      
+              <div class="badge" style="background: rgba(255, 255, 255, 0)">                                             
+                <img 
+                  class="lazyload"
+                  src="{{ 'collab-icon.png' | asset_img_url: '24x' }}"
+                  srcset="{{ 'collab-icon.png' | asset_img_url: '48x', scale: 2 }} 2x"
+                  data-widths="[360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"  
+                  data-sizes="auto" 
+                  alt="Collab Icon"
+                >        
+                Collab
+              </div>
+            {% endif %} 
+            {% if product.tags contains 'restocked' %}                                                                      
+              <div class="badge" style="background: rgba(255, 255, 255, 0)">                                                   
+                <img 
+                  class="lazyload"
+                  src="{{ 'restocked-icon.png' | asset_img_url: '24x' }}"
+                  srcset="{{ 'restocked-icon.png' | asset_img_url: '48x', scale: 2 }} 2x" 
+                  data-widths="[360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"  
+                  data-sizes="auto"
+                  alt="Restocked Icon"
+                >        
+                Restocked
+              </div>
+            {% endif %} 
+            {% if product.tags contains 'last-chance' %}                                                                      
+              <div class="badge" style="background: rgba(255, 255, 255, 0)">                                                   
+                <img 
+                  class="lazyload" 
+                  src="{{ 'last-chance-icon.png' | asset_img_url: '24x' }}"
+                  srcset="{{ 'last-chance-icon.png' | asset_img_url: '48x', scale: 2 }} 2x"
+                  data-widths="[360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"  
+                  data-sizes="auto" 
+                  alt="Last Chance Icon"
+                >        
+                Last Chance
+              </div>
+            {% endif %} 
+            {% if product.tags contains 'coming-soon' %}                                                                     
+              <div class="badge" style="background: rgba(255, 255, 255, 0)">                                                   
+                <img 
+                  class="lazyload"
+                  src="{{ 'coming-soon-icon.png' | asset_img_url: '20x' }}"
+                  srcset="{{ 'coming-soon-icon.png' | asset_img_url: '40x', scale: 2 }} 2x"
+                  data-widths="[360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"  
+                  data-sizes="auto" 
+                  alt="Coming Soon Icon"
+                >        
+                Coming Soon
+              </div>
+            {% endif %} 
+            {% if product.tags contains 'second-life' %}                                                                     
+              <div class="badge" style="background: rgba(255, 255, 255, 0)">                                                   
+                <img 
+                  class="lazyload"
+                  src="{{ 'second-life-icon.png' | asset_img_url: '20x' }}"
+                  srcset="{{ 'second-life-icon.png' | asset_img_url: '40x', scale: 2 }} 2x"
+                  data-widths="[360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"  
+                  data-sizes="auto"  
+                  alt="Second Life Icon"              
+                >        
+                2nd Life    
+              </div>          
+            {% endif %} 
+            {% if product.available == false %}              
+              <div class="badge" style="background: rgba(255, 255, 255, 0)">
+                <img
+                  class="lazyload" 
+                  src="{{ 'out-of-stock-icon.png' | asset_img_url: '33x32' }}"                         
+                  srcset="{{ 'out-of-stock-icon.png' | asset_img_url: '66x64', scale: 2 }} 2x"         
+                  alt="Out Of Stock Icon"
+                >  
+                Sold Out
+              </div>      
+            {% endif %}                          
+          </div>        
